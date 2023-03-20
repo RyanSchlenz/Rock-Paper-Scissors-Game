@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Courier New", Courier, monospace;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(26, 78, 180);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Elements */
+
+.player {
+  flex: 50%;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s;
+  border-radius: 25px;
+  background-color: rgb(153, 195, 243);
+}
+
+.computer {
+  background-color: rgb(99, 187, 232);
+  flex: 50%;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s;
+  border-radius: 25px;
+}
+
+.name {
+  position: relative;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.score {
+  padding: 2rem;
+  opacity: 0.6;
+  border-radius: 9px;
+  width: auto;
+  text-align: center;
+  transition: all 0.5s;
+  background-color: rgb(13, 52, 93);
+  color: rgba(229, 228, 233, 0.885);
+  font-size: 5rem;
+}
+
+.computer-score {
+  margin-top: 15px;
+}
+
+.player-score {
+  margin-top: 15px;
+}
+
+/* #player-score #computer-score  */
+.choice-computer {
+  font-size: 6rem;
+  font-weight: 300;
+  color: rgba(229, 228, 233, 0.885);
+
+  margin-bottom: 10px;
+}
+
+.choice-player {
+  font-size: 6rem;
+  font-weight: 300;
+  color: rgba(229, 228, 233, 0.885);
+  margin-bottom: 10px;
+}
+
+.choice-name {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #ddd;
+}
+
+/* Make the buttons smaller */
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  width: 170px;
+}
+
+img {
+  max-width: 15%;
+  height: auto;
+}
+
+.btn--new {
+  top: 15rem;
+  width: 200px;
+  font-weight: 900;
+}
+
+.btn--rock {
+  top: 39.3rem;
+  top: 16.5rem;
+
+  margin-top: 100px;
+}
+
+.btn--paper {
+  top: 46.1rem;
+  position: absolute;
+  top: 16.5rem;
+  margin-top: 175px;
+}
+
+.btn--scissors {
+  top: 53rem;
+  position: absolute;
+  top: 16.5rem;
+  margin-top: 250px;
+}
